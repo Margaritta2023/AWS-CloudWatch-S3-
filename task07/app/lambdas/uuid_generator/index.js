@@ -16,9 +16,9 @@ exports.handler = async (event) => {
    
    
         const s3Parameters = {
-           bucket: bucketName,
-           key:fileName,
-           body: JSON.stringify(s3Obj),
+           Bucket: bucketName,
+           Key:fileName,
+           Body: JSON.stringify(s3Obj),
            ContentType:'application/json'
         };
 
